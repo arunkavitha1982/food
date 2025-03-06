@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Philip Herlambang">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+
+    <link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/favicon.ico">
+    <link rel="apple-touch-icon" href="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/apple-touch-icon.png">
+
+    <title>Kimi Themes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/kimi.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl_carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl_carousel/owl.theme.default.css">
+
+    <!--tipue search-->
+    <link rel="stylesheet" href="css/tipuesearch/tipuesearch.css">
+
+    <link rel="stylesheet" href="css/prism/prism.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid" style="background: white;">
+            <div class="navbar-header pull-left"
+                style="border-right: 1px solid #E6EAEA; padding-right: 10px; margin-right: 0px; padding-left: 10px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar icon-short"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar icon-medium"></span>
+                </button>
+            </div>
+            <div class="visible-xs" style="width: 70%; float: left;">
+                <p class="text-center logo-container visible-xs"><a href="index.html"><img src="images/logo.png"
+                            width="90"></a></p>
+            </div>
+            
+
+
+            <div class="clearfix"></div>
+
+            <div class="fly-searchbar" style="display: none;">
+                <div class="top-nav-searchbar searchbar-mobile">
+                    <div class="input-group">
+                        <form action="search.html">
+                            <input class="form-control" type="text" name="q" id="tipue_search_input"
+                                placeholder="Search for" autofocus="autofocus">
+                        </form>
+                        <div class=" logo-center">
+                            <p class="text-center logo-container "><a href="index.html"><img src="images/logo.png"
+                                        width="90"></a></p>
+                        </div>
+                        <button class="pull-right" id="buttonCloseSearchbarMobile"><i class="fa fa-times"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="col-md-4 col-sm-4 d-none d-sm-inline d-md-inline d-lg-inline">
+                    <p class="text-center logo-container">
+                        <a href="index.html">
+                            <img src="images/logo.png" class="" width="80" height="auto">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Shop</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="merchantGuide.html">Chef Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="cart-flyout">
+                                        <h4 class="text-oswald">Recently Added Product(s)</h4>
+                                        <div class="row">
+                                            <div class="col-sm-2 col-xs-3 less-padding">
+                                                <img src="images/brownies.jpg" width="100%">
+                                            </div>
+                                            <div class="col-sm-8 col-xs-9">
+                                                <span class="text-gray-1">Brownies Chocolate</span>
+                                                <p class="text-gray-2">1 x 50.000</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-2 col-xs-3 less-padding">
+                                                <img src="images/lapisSurabaya.jpg" width="100%">
+                                            </div>
+                                            <div class="col-sm-8 col-xs-9">
+                                                <span class="text-gray-1">Lapis Surabaya</span>
+                                                <p class="text-gray-2">1 x 175.000</p>
+                                            </div>
+
+                                        </div>
+                                        <hr>
+
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-6 less-padding">
+                                                <h4><small>Total</small><br><span>IDR 225.000</span></h4>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6 less-padding">
+                                                <a href="checkout2.html"
+                                                    class="button-green-top-nav btn pull-right btn-block text-oswald text-uppercase">View
+                                                    Cart</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </div>
+    </nav>
+
+
+    <div class="container-fluid kimi-container less-padding">
+        <div class="homepage-slider owl-carousel owl-theme">
+            <div class="item">
+                <div class="scrim"></div>
+                <h2 class="heading-large">Good Food is All the Sweeter When Shared with Good Friends</h2>
+               
+                <div class="row-buttons">
+                   
+                    <a href="articles.html" class="btn button-outline text-white">See Article</a>
+                    
+                </div>
+                <img src="images/slider1.jpg" width="100%">
+            </div>
+            <div class="item">
+                <div class="scrim"></div>
+                <h2 class="heading-large">Refresh Your Day, Refresh Your Mood, Refresh with this Delicious Meal</h2>
+               
+                <div class="row-buttons">
+                    
+                    <a href="articles.html" class="btn button-outline text-white">See Article</a>
+                    
+                </div>
+                <img src="images/slider2.jpg" width="100%">
+            </div>
+            <div class="item">
+                <div class="scrim"></div>
+                <h2 class="heading-large">Refresh Your Day, Refresh Your Mood, Refresh with this Delicious Meal</h2>
+               
+                <div class="row-buttons">
+                    
+                    <a href="articles.html" class="btn button-outline text-white">See Article</a>
+                    
+                </div>
+                <img src="images/slider3.jpg" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid less-padding">
+        <h2 class="default-userProductList-InfoBar-title text-center"><i class="fa fa-heart-o" aria-hidden="true"></i>
+            Editor's Pick</h2>
+        <div class="small-slider owl-carousel owl-theme">
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">5 Products</span>
+                <p>Rice</p>
+                <img src="images/tag_nasi.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">15 Products</span>
+                <p>Doughnut</p>
+                <img src="images/tag_doughnut.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">52 Products</span>
+                <p>Breads</p>
+                <img src="images/tag_bread.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">100 Products</span>
+                <p>Cakes</p>
+                <img src="images/tag_cake.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">10 Products</span>
+                <p>Coffee</p>
+                <img src="images/tag_coffee.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">10 Products</span>
+                <p>Fast Food</p>
+                <img src="images/tag_fastfood.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">10 Products</span>
+                <p>healthy Food</p>
+                <img src="images/tag_healthy.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">5 Products</span>
+                <p>Juice</p>
+                <img src="images/tag_juice.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">20 Products</span>
+                <p>Korean Food</p>
+                <img src="images/tag_korean.jpg" width="100%">
+            </a>
+            <a href="#" class="item">
+                <div class="scrim"></div>
+                <span class="small-text-overlay">10 Products</span>
+                <p>Noodles</p>
+                <img src="images/tag_noodle.jpg" width="100%">
+            </a>
+        </div>
+    </div>
+
+    <div class="clearfix maya-tiny-padding"></div>
+    <div class="container">
+        <div class="">
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <h2 class="default-userProductList-InfoBar-title text-center"><i class="fa fa-heart-o"
+                        aria-hidden="true"></i> This Week Favoourites</h2>
+
+                <div class="col-sm-6 col-md-4" data-behavior="sample_code">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/risotto_square.jpg" alt="risotto lemon">
+                    </a>
+                    <div class="caption box">
+                        <h3>Lemon Risotto</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/oats.jpg" alt="Oats Cake">
+                    </a>
+                    <div class="caption box">
+                        <h3>Oats Cake</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 4.500 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button onclick="location.href='shoppingCart.html'"
+                                    class="btn default-userProductList-CardList-button pull-right" role="button">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/mango.jpg" alt="Mango Cake">
+                    </a>
+                    <div class="caption box">
+                        <h3>Mango Cake</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                                <span class="min-order">5 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button onclick="location.href='shoppingCart.html'"
+                                    class="btn default-userProductList-CardList-button pull-right" role="button">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/cake_square.jpg" alt="Cake">
+                    </a>
+                    <div class="caption box">
+                        <h3>Cake</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 23.000 / pcs</p>
+                                <span class="min-order">5 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button onclick="location.href='shoppingCart.html'"
+                                    class="btn default-userProductList-CardList-button pull-right" role="button">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-behavior="sample_code">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/seafood_square.jpg" alt="cake">
+                    </a>
+                    <div class="caption box">
+                        <h3>Party Cake</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button onclick="location.href='shoppingCart.html'"
+                                    class="btn default-userProductList-CardList-button pull-right" role="button">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4" data-behavior="sample_code">
+                    <a href="#" class="thumbnail_item thumbnail less-padding less-margin">
+                        <img src="images/moesli.jpg" alt="Moesli">
+                    </a>
+                    <div class="caption box">
+                        <h3>Moesli</h3>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-6">
+                                <p class="default-userProductList-CardList-price">Rp 45.000 / pcs</p>
+                                <span class="min-order">10 pcs min order</span>
+                            </div>
+
+                            <div class="col-sm-4 col-xs-6">
+                                <button onclick="location.href='shoppingCart.html'"
+                                    class="btn default-userProductList-CardList-button pull-right" role="button">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+       
+
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-md-offset-1">
+                <p class="text-center">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/svg/pilih_menu.svg"
+                        width="120" />
+                <h5 class="text-roboto text-center">Pilih Menu yang Anda Inginkan</h5>
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="text-center">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/svg/atur_jadwal.svg"
+                        width="120" />
+                <h5 class="text-roboto text-center">Atur Jadwal dan Alamat Pengantaran</h5>
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="text-center">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/svg/approval.svg" width="120" />
+                <h5 class="text-roboto text-center">Dapatkan Approval dari Chef</h5>
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="text-center">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/svg/pay.svg" width="120" />
+                <h5 class="text-roboto text-center">Lakukan Pembayaran</h5>
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/kimistatic/images/svg/nikmati.svg" width="120" />
+                <h5 class="text-roboto text-center">Nikmati Order Anda Sesuai Jalan</h5>
+                </p>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+
+    <div class="clearfix maya-tiny-padding"></div>
+    <div class="container mobile-full-width-slider">
+        <h2 class="default-userProductList-InfoBar-title text-center"><i class="fa fa-heart-o" aria-hidden="true"></i>
+            Featured Merchant</h2>
+        <div class="featured-merchant-slider owl-carousel owl-theme">
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>Sucicakes</p>-->
+                <img src="images/sucicakes_logo.png" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>Nasi Bakar 58</p>-->
+                <img src="images/nasi_bakar_logo.jpg" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>LL Ball</p>-->
+                <img src="images/llball_logo.JPG" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>LL Ball</p>-->
+                <img src="images/deliciozo_logo.jpg" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>LL Ball</p>-->
+                <img src="images/bakmi_48_logo.jpg" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>LL Ball</p>-->
+                <img src="images/llball_logo.JPG" class="img-rounded" width="100%">
+            </div>
+
+            <div class="item">
+                <!--<div class="scrim"></div>-->
+                <!--<p>LL Ball</p>-->
+                <img src="images/fans_logo.png" class="img-rounded" width="100%">
+            </div>
+
+        </div>
+    </div>
+    <div class="clearfix maya-small-padding"></div>
+
+
+
+
+    <!--include footer-->
+    <div class="include-footer"></div>
+
+
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl_carousel/owl.carousel.js"></script>
+
+    <!--boostrap js-->
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--tipuesearch-->
+    <script src="js/tipusearch/tipuesearch_content.js"></script>
+    <script src="js/tipusearch/tipuesearch_set.js"></script>
+    <script src="js/tipusearch/tipuesearch.js"></script>
+
+    <!-- <script src="js/prism/prism.js"></script> -->
+
+    <!--kimi basic js-->
+
+    <script src="./js/kimi.js"></script>
+
+
+</body>
+
+</html>
